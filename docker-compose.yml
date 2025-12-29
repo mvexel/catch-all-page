@@ -4,7 +4,7 @@ services:
     expose:
       - "80"
     restart: unless-stopped
-    labels:
-      - "traefik.http.routers.catchall.rule=HostRegexp(`{host:.+}`)"
-      - "traefik.http.routers.catchall.priority=1"
-      - "traefik.enable=true"
+    # labels:
+    #   - "traefik.http.routers.catchall.rule=HostRegexp(`{host:.+}`)"
+    #   - "traefik.http.routers.catchall.priority=1"
+    #   - "traefik.enable=true"
